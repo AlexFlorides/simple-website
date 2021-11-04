@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Assignment 2</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <link href="css/public_research.css" type="text/css" rel="stylesheet">
+    <!-- https://www.w3schools.com/howto/howto_css_social_media_buttons.asp -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+
+<script>
+    /* JavaScript function that is being called when website is in
+       mobile version and user clicks the button at the right and top
+       of the page to open or close the vertical navigation menu bar.
+    */
+    function myFunction() {
+        var x = document.getElementById("myLinks");
+        if (x.style.display === "block") {
+            x.style.display = "none";
+        } else {
+            x.style.display = "block";
+        }
+    }
+
+    /* closes the vertical dropdown navigation menu bar if the user
+    clicks outside of it .
+    */
+    window.onclick = function(event) {
+        var x = document.getElementById("myLinks");
+        if (!event.target.matches('.fa-bars') && !event.target.matches('.icon')) {
+            if (x.style.display === "block") {
+                x.style.display = "none";
+            }
+        }
+    }
+
+</script>
+
+<a class="anchor" id="home"></a>
+
+<!-- navigation menu bar -->
+<ul class="horizontal">
+    <li><a class="contact_ul" href="index.html#contact">Contact</a></li>
+    <li><a class="talks_ul" href="index.html#talks">Invited Talks</a></li>
+    <li><a class="awards_ul" href="index.html#awards">Awards</a></li>
+    <li><a class="research_ul" href="#home">Public Research</a></li>
+    <li><a class="projects_ul" href="past_projects.html">Past Projects</a></li>
+    <li><a class="experience_ul" href="index.html#experience">Experience</a></li>
+    <li><a class="education_ul" href="index.html#education">Education</a></li>
+    <li><a class="about_ul" href="index.html#about">About Me</a></li>
+</ul>
+
+<!-- navigation menu bar for small screens -->
+<div class="topnav">
+    <a href="#home" class="active">Colin Ritman</a>
+    <div id="myLinks">
+        <ul class="topnav">
+            <li><a class="about_ul" href="index.html#about">About Me</a></li>
+            <li><a class="education_ul" href="index.html#education">Education</a></li>
+            <li><a class="experience_ul" href="index.html#experience">Experience</a></li>
+            <li><a class="projects_ul" href="past_projects.html">Past Projects</a></li>
+            <li><a class="research_ul">Public Research</a></li>
+            <li><a class="awards_ul" href="index.html#awards">Awards</a></li>
+            <li><a class="talks_ul" href="index.html#talks">Invited Talks</a></li>
+            <li><a class="contact_ul" href="index.html#contact">Contact</a></li>
+        </ul>
+    </div>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+    </a>
+</div>
+
+<!-- class containing section's Title, Picture and Text -->
+<div class="para">
+    <!-- 'Public Research' Section -->
+    <div class="research">
+        <img src="images/research.png" alt="ResearchImage" > <!-- https://static.thenounproject.com/png/665437-200.png -->
+        <a class="anchor" id="research"></a>
+        <h2>Public Research</h2>
+        <ul>
+            <li>Game Industry & Policy</li>
+            <li>3D Modelling & Technical Art</li>
+            <li>Artificial Intelligence</li>
+        </ul>
+    </div>
+</div>
+
+<!-- footer containing the copyright text -->
+<div id="extra" class="footer">
+    <p>Last updated 20 March 2019</p>
+    <p>Copyright © <script>document.write(new Date().getFullYear())</script> Colin Ritman. All Right Reserved</p>
+</div>
+</body>
+</html>

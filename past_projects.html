@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Assignment 2</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <link href="css/past_projects.css" type="text/css" rel="stylesheet">
+    <!-- https://www.w3schools.com/howto/howto_css_social_media_buttons.asp -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+
+<body>
+
+<script>
+    /* JavaScript function that is being called when website is in
+       mobile version and user clicks the button at the right and top
+       of the page to open or close the vertical navigation menu bar.
+    */
+    function myFunction() {
+        var x = document.getElementById("myLinks");
+        if (x.style.display === "block") {
+            x.style.display = "none";
+        } else {
+            x.style.display = "block";
+        }
+    }
+
+    /* closes the vertical dropdown navigation menu bar if the user
+    clicks outside of it .
+    */
+    window.onclick = function(event) {
+        var x = document.getElementById("myLinks");
+        if (!event.target.matches('.fa-bars') && !event.target.matches('.icon')) {
+            if (x.style.display === "block") {
+                x.style.display = "none";
+            }
+        }
+    }
+
+
+</script>
+<a class="anchor" id="home"></a>
+
+<!-- navigation menu bar -->
+<ul class="horizontal">
+    <li><a class="contact_ul" href="index.html#contact">Contact</a></li>
+    <li><a class="talks_ul" href="index.html#talks">Invited Talks</a></li>
+    <li><a class="awards_ul" href="index.html#awards">Awards</a></li>
+    <li><a class="research_ul" href="public_research.html">Public Research</a></li>
+    <li><a class="projects_ul" href="#home">Past Projects</a></li>
+    <li><a class="experience_ul" href="index.html#experience">Experience</a></li>
+    <li><a class="education_ul" href="index.html#education">Education</a></li>
+    <li><a class="about_ul" href="index.html#about">About Me</a></li>
+</ul>
+
+<!-- navigation menu bar for small screens -->
+<div class="topnav">
+    <a href="#home" class="active">Colin Ritman</a>
+    <div id="myLinks">
+        <ul class="topnav">
+            <li><a class="about_ul" href="index.html#about">About Me</a></li>
+            <li><a class="education_ul" href="index.html#education">Education</a></li>
+            <li><a class="experience_ul" href="index.html#experience">Experience</a></li>
+            <li><a class="projects_ul">Past Projects</a></li>
+            <li><a class="research_ul" href="public_research.html">Public Research</a></li>
+            <li><a class="awards_ul" href="index.html#awards">Awards</a></li>
+            <li><a class="talks_ul" href="index.html#talks">Invited Talks</a></li>
+            <li><a class="contact_ul" href="index.html#contact">Contact</a></li>
+        </ul>
+    </div>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+    </a>
+</div>
+
+
+<!-- class containing section's Title, Picture and Text -->
+<div class="para">
+    <!-- 'Past Projects' Section -->
+    <div class="projects">
+        <img src="images/projects.png" alt="ProjectsImage" > <!-- https://sportsscientists.com/wp-content/uploads/2008/01/featured-icon-computer-game.png -->
+        <h2>Past Projects</h2>
+        <ul>
+            <li><a class="link" href="https://tuckersoft.net/ealing20541/metlhedd/">Metl Hedd</a> - Tuckersoft</li>
+            <li><a class="link" href="https://tuckersoft.net/ealing20541/nohzdyve/">Nohzdyve</a> - Tuckersoft</li>
+            <li><a class="link" href="https://www.destinythegame.com/">Destiny</a> - Hign Moon Studios</li>
+            <li><a class="link" href="https://thewitcher.com/en/witcher3">The Witcher 3: Wild Hunt </a> - CD Projekt</li>
+        </ul>
+    </div>
+</div>
+
+<!-- footer containing the copyright text -->
+<div id="extra" class="footer">
+    <p>Last updated 20 March 2019</p>
+    <p>Copyright © <script>document.write(new Date().getFullYear())</script> Colin Ritman. All Right Reserved</p>
+</div>
+</body>
+</html>

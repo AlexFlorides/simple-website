@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Assignment 2</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <link href="css/assignment2.css" type="text/css" rel="stylesheet">
+    <!-- https://www.w3schools.com/howto/howto_css_social_media_buttons.asp -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+<script>
+    /* JavaScript function that is being called when website is in
+       mobile version and user clicks the button at the right and top
+       of the page to open or close the vertical navigation menu bar.
+    */
+    function myFunction() {
+        var x = document.getElementById("myLinks");
+        if (x.style.display === "block") {
+            x.style.display = "none";
+        } else {
+            x.style.display = "block";
+        }
+    }
+
+    /* closes the vertical dropdown navigation menu bar if the user
+    clicks outside of it .
+    */
+    window.onclick = function(event) {
+        var x = document.getElementById("myLinks");
+        if (!event.target.matches('.fa-bars') && !event.target.matches('.icon')) {
+            if (x.style.display === "block") {
+                x.style.display = "none";
+            }
+        }
+    }
+</script>
+
+<a class="anchor" id="home"></a>
+
+<!-- navigation menu bar -->
+<ul class="horizontal">
+    <li><a class="contact_ul" href="#contact">Contact</a></li>
+    <li><a class="talks_ul" href="#talks">Invited Talks</a></li>
+    <li><a class="awards_ul" href="#awards">Awards</a></li>
+    <li><a class="research_ul" href="public_research.html">Public Research</a></li>
+    <li><a class="projects_ul" href="past_projects.html">Past Projects</a></li>
+    <li><a class="experience_ul" href="#experience">Experience</a></li>
+    <li><a class="education_ul" href="#education">Education</a></li>
+    <li><a class="about_ul" href="#about">About Me</a></li>
+</ul>
+
+<!-- navigation menu bar for small screens -->
+<div class="topnav">
+    <a href="#home" class="active">Colin Ritman</a>
+    <div id="myLinks">
+        <ul class="topnav">
+            <li><a class="about_ul" href="index.html#about">About Me</a></li>
+            <li><a class="education_ul" href="#education">Education</a></li>
+            <li><a class="experience_ul" href="#experience">Experience</a></li>
+            <li><a class="projects_ul" href="past_projects.html">Past Projects</a></li>
+            <li><a class="research_ul" href="public_research.html">Public Research</a></li>
+            <li><a class="awards_ul" href="#awards">Awards</a></li>
+            <li><a class="talks_ul" href="#talks">Invited Talks</a></li>
+            <li><a class="contact_ul" href="#contact">Contact</a></li>
+        </ul>
+    </div>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+    </a>
+</div>
+
+<!-- class, divided into divs containing each section's Title, Picture and Text -->
+<div class="para">
+    <!-- 'About Me' Section -->
+    <div class="about">
+        <img src="images/about.jpg" alt="Photo of Colin Ritman"> <!-- https://i.pinimg.com/originals/ab/c0/c5/abc0c5e18edf61fc630d6cc48ae8d45c.jpg -->
+        <a class="anchor" id="about"></a>
+        <h2>About Me</h2>
+        <p>Hello, my name is Colin Ritman and i am a game creator. I am from England, a big fan o 1980's computer games
+            and i am keen on learning
+            the latest gaming trends. Currently, i'm working for the company 'Tuckersoft' but i am available to hire on
+            my own as a freelance game designer
+            and coder remotely. I have been designing and creating games for over 10 years, some of my previous projects
+            are 'Metal Hedd' and 'Nohzdyve'.
+        </p>
+    </div>
+    <!-- 'Education' Section -->
+    <div class="education">
+        <img src="images/education.png" alt="Icon of square graduation cap"> <!-- https://imageog.flaticon.com/icons/png/512/46/46955.png?size=1200x630f&pad=10,10,10,10&ext=png&bg=FFFFFFFF -->
+        <a class="anchor" id="education"></a>
+        <h2>Education</h2>
+        <ul>
+            <li>BSc Computer Games Design and Programming, Staffordshire University<br><br><br></li>
+            <li>MSc High Performance Graphics and Games Engineering, University of Leeds</li>
+        </ul>
+    </div>
+    <!-- 'Experience' Section -->
+    <div class="experience">
+        <img src="images/experience.png" alt="Icon of a suitcase"> <!-- http://cdn.onlinewebfonts.com/svg/img_356662.png -->
+        <a class="anchor" id="experience"></a>
+        <h2>Experience</h2>
+        <ul>
+            <li><a class="link" href="https://www.ubisoft.com/en-us/">Ubisoft</a> - Game Design (2011-2012)</li>
+            <li><a class="link" href="https://www.ea.com/en-gb">Electronic Arts</a> - UI Technical Artist (2014-2017)
+            </li>
+            <li><a class="link" href="https://tuckersoft.net/ealing20541/">Tuckersoft</a> - Game Developer
+                (2017-Present)
+            </li>
+        </ul>
+    </div>
+    <!-- 'Awards' Section -->
+    <div class="awards">
+        <img src="images/award.png" alt="Icon of an award"> <!-- https://www.shareicon.net/data/512x512/2015/10/29/663523_award_512x512.png -->
+        <a class="anchor" id="awards"></a>
+        <h2>Awards</h2>
+        <ul>
+            <li>Game of the Year - <a class="link" href="https://tuckersoft.net/ealing20541/metlhedd/">Metl Hedd</a>
+                (2008)
+            </li>
+            <li>Best Narrative - <a class="link" href="https://www.destinythegame.com/">Destiny</a> (2014)</li>
+            <li>Best Role Playing Game - <a class="link" href="https://thewitcher.com/en/witcher3">The Witcher 3: Wild
+                Hunt </a> (2015)
+            </li>
+        </ul>
+    </div>
+    <!-- 'Invited Talks' Section -->
+    <div class="talks">
+        <img src="images/talks.png" alt="Icon of a figure giving a presentation"> <!-- http://www.msrc-cu.org/wp-content/uploads/2017/08/man.png -->
+        <a class="anchor" id="talks"></a>
+        <h2>Invited Talks</h2>
+        <ul>
+            <li>Storytime at PAX East 2016 <a class="link" href="https://www.youtube.com/watch?v=UwBl7Rnkt78">Watch
+                Here</a>
+            </li>
+            <li>How To Design Deep Games 2014(Braid, The Witness) <a class="link"
+                                                                     href="https://www.youtube.com/watch?v=d0m0jIzJfiQ">Watch
+                Here</a></li>
+            <li>Everything I Learned About Level Design from Disneyland 2009
+                <a class="link" href="https://www.gdcvault.com/play/1305/Everything-I-Learned-About-Level">Watch
+                    Here</a>
+            </li>
+        </ul>
+    </div>
+    <!-- 'Contact' Section -->
+    <div class="contact">
+        <a class="anchor" id="contact"></a>
+        <h2>Contact</h2>
+        <p>Feel free to send me a message here: <a href="mailto:colin.ritman@hotmail.com">colin.ritman@hotmail.com</a>,
+            I'll try to respond as quick as I can! I'm also on this social media thing, If you need me there:</p>
+        <div class="contacticons">
+            <a href="https://www.facebook.com/colin.ritman.7" class="fa fa-facebook"></a>
+            <a href="https://twitter.com/RitmanColin" class="fa fa-twitter"></a>
+            <a href="https://www.instagram.com/colinritmans/" class="fa fa-instagram"></a>
+        </div>
+    </div>
+</div>
+
+<!-- footer containing the copyright text -->
+<div id="extra" class="footer">
+    <p>Last updated 20 March 2019</p>
+    <p>Copyright © <script>document.write(new Date().getFullYear())</script> Colin Ritman. All Right Reserved</p>
+</div>
+
+</body>
+</html>

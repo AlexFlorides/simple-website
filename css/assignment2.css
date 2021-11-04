@@ -1,0 +1,541 @@
+/* @media rule that change the style adapted for big screens */
+@media only screen and (min-width: 960px) {
+
+	/* makes one navigation bar visible */
+	.horizontal {
+		visibility: visible;
+	}
+
+	/* makes one navigation bar invisible */
+	.topnav {
+		visibility: hidden;
+	}
+
+	/* add top background picture */
+	body {
+		margin-top: 0;
+		height: 100%;
+		width: 100%;
+		background: white url("../images/colin_ritman1.jpg") no-repeat top; /* https://peopledotcom.files.wordpress.com/2019/01/will-poulter-1.jpg?crop=0px,0px,2017px,1058.925px&resize=1200,630 */
+		background-size: 90%;
+		background-blend-mode: inherit;
+		background-position-y: 35px;
+	}
+
+	/* the navigation menu bar at the top of the page */
+	ul.horizontal {
+		list-style-type: none;
+		margin: 0;
+		padding: 0;
+		top: 0;
+		right: 0;
+		overflow: hidden;
+		width: 100%;
+		position: fixed;
+		background: black;
+	}
+
+	/* the boxes of the navigation menu bar at the top of the page */
+	ul.horizontal li {
+		float: right;
+		width: 12.5%;
+	}
+
+	/* the text inside the navigation menu bar at the top of the page */
+	li a {
+		display: block;
+		color: white;
+		text-align: center;
+		padding: 5px 0px;
+		text-decoration: none;
+		font-size: 20px;
+		font-weight: bold;
+		border: 1px solid #606869;
+	}
+
+	/* images from cloudflare  */
+	.fa {
+		padding: 20px;
+		font-size: 30px;
+		width: 10%;
+		text-align: center;
+		text-decoration: none;
+		margin: 5px 2px;
+	}
+
+	/* effect of pictures at the 'Contact' Section  when hover */
+	.fa:hover {
+		opacity: 0.7;
+	}
+
+	/* facebook picture at the 'Contact' Section */
+	.fa-facebook {
+		background: #3B5998;
+		color: white;
+	}
+
+	/* twitter picture at the 'Contact' Section */
+	.fa-twitter {
+		background: #55ACEE;
+		color: white;
+	}
+
+	/* instagram picture at the 'Contact' Section */
+	.fa-instagram {
+		background: #125688;
+		color: white;
+	}
+
+	/* the text in the sections */
+	.para {
+		padding-top: 30%;
+		padding-left: 20%;
+		padding-right: 20%;
+		text-align: justify;
+		font-family: Arial;
+	}
+
+	/* the external links */
+	.link {
+		display: inline;
+		color: black;
+		text-align: center;
+		padding: 0;
+		text-decoration: underline;
+		font-size: medium;
+		font-weight: normal;
+		border: none;
+	}
+
+	/* footer containing the copyright text */
+	.footer {
+		position: absolute;
+		float: bottom;
+		left: 0;
+		width: 100%;
+		background-color: black;
+		color: white;
+		text-align: center;
+		margin-top: 10px;
+	}
+
+	/* effect of 'Contact' Button on the navigation menu bar */
+	.contact_ul:hover {
+		background-color: white;
+		color: black;
+	}
+
+	/* effect of 'Invited Talks' Button on the navigation menu bar when hover */
+	.talks_ul:hover {
+		background-color: white;
+		color: black;
+	}
+
+	/* effect of 'Awards' Button on the navigation menu bar when hover  */
+	.awards_ul:hover {
+		background-color: white;
+		color: black;
+	}
+
+	/* effect of 'Research' Button on the navigation menu bar when hover  */
+	.research_ul:hover {
+		background-color: white;
+		color: black;
+	}
+
+	/* effect of 'Past Projects' Button on the navigation menu bar when hover  */
+	.projects_ul:hover {
+		background-color: white;
+		color: black;
+	}
+
+	/* effect of 'Experience' Button on the navigation menu bar when hover  */
+	.experience_ul:hover {
+		background-color: white;
+		color: black;
+	}
+
+	/* effect of 'Education' Button on the navigation menu bar  when hover */
+	.education_ul:hover {
+		background-color: white;
+		color: black;
+	}
+
+	/* effect of 'About Me' Button on the navigation menu bar when hover  */
+	.about_ul:hover {
+		background-color: white;
+		color: black;
+	}
+
+	/* 'About' Section */
+	.about {
+		border-bottom: 4px solid #666F75;
+		padding: 20px;
+		overflow: hidden;
+	}
+
+	/* 'About' Section image*/
+	.about img {
+		margin-right: 15px;
+		float: left;
+		width: 15%;
+	}
+
+	/* 'Education' Section image*/
+	.education img {
+		margin-right: 15px;
+		float: right;
+		width: 25%;
+	}
+
+	/* 'Experience' Section image*/
+	.experience img {
+		margin-right: 15px;
+		float: left;
+		width: 20%;
+	}
+
+	/* 'Past Projects' Section image*/
+	.projects img {
+		margin-right: 15px;
+		float: right;
+		width: 25%;
+	}
+
+	/* 'Public Research' Section image*/
+	.research img {
+		margin-right: 15px;
+		float: left;
+		width: 15%;
+	}
+
+	/* 'Awards' Section image*/
+	.awards img {
+		margin-right: 15px;
+		float: right;
+		width: 20%;
+	}
+
+	/* 'Invited Talks' Section image*/
+	.talks img {
+		margin-right: 15px;
+		float: left;
+		width: 20%;
+	}
+
+	/* class of 'Education' Section */
+	.education {
+		border-bottom: 4px solid #666F75;
+		padding: 20px;
+		overflow: hidden;
+	}
+
+	/* class of 'Experience' Section */
+	.experience {
+		border-bottom: 4px solid #666F75;
+		padding: 20px;
+		overflow: hidden;
+
+	}
+
+	/* the text inside the section that are bullet points  */
+	.para ul li {
+		list-style-position: inside;
+	}
+
+	/* class of 'Past Projects' Section */
+	.projects {
+		border-bottom: 4px solid #666F75;
+		padding: 20px;
+		overflow: hidden;
+	}
+
+	/* class of 'Public Research' Section */
+	.research {
+		border-bottom: 4px solid #666F75;
+		padding: 20px;
+		overflow: hidden;
+	}
+
+	/* class of 'Awards' Section */
+	.awards {
+		border-bottom: 4px solid #666F75;
+		padding: 20px;
+		overflow: hidden;
+	}
+
+	/* class of 'Invited Talks' Section */
+	.talks {
+		border-bottom: 4px solid #666F75;
+		padding: 20px;
+		overflow: hidden;
+	}
+
+	/* the effect of the external links when hover  */
+	.link:hover {
+		text-decoration: none;
+	}
+}
+
+/* @media rule that change the style adapted for small screens */
+@media only screen and (max-width: 960px){
+
+	/* add top background picture */
+	body {
+		height: 100%;
+		width: 100%;
+		background: white url("../images/colin_ritman1.jpg") no-repeat top; /* https://peopledotcom.files.wordpress.com/2019/01/will-poulter-1.jpg?crop=0px,0px,2017px,1058.925px&resize=1200,630 */
+		background-size: 100%;
+		background-position-y: 35px;
+	}
+
+	/* the boxes of the vertical navigation menu bar */
+	ul.topnav {
+		list-style-type: none;
+		margin: 0;
+		padding: 0;
+		overflow: hidden;
+		background-color: #333;
+		top: auto;
+	}
+
+	/* the text inside the boxes of the vertical navigation menu bar */
+	ul.topnav li a {
+		display: block;
+		color: white;
+		text-align: center;
+		text-decoration: none;
+		padding-top: 11px;
+		padding-bottom: 11px;
+		border-top: 1px solid white;
+	}
+
+	/* the vertical navigation menu bar */
+	.topnav {
+		overflow: hidden;
+		background-color: #333;
+		position: fixed;
+		width: 100%;
+		top: 0;
+		left: 0;
+	}
+
+	/* the vertical navigation menu bar */
+	.topnav #myLinks {
+		display: none;
+		text-align: center;
+	}
+
+	/* the text inside the boxes of the vertical navigation menu bar */
+	.topnav a {
+		color: white;
+		padding: 14px 16px;
+		text-decoration: none;
+		display: block;
+	}
+
+	/* the hamburger icon in the navigation menu bar */
+	.topnav a.icon {
+		background: black;
+		display: block;
+		position: absolute;
+		right: 0;
+		top: 0;
+	}
+
+	/* the opened navigation menu bar */
+	.active {
+		background-color: black;
+		color: white;
+	}
+
+	/* makes one navigation menu bar invisible */
+	.horizontal {
+		visibility: hidden;
+	}
+
+	/* the text in the sections */
+	.para {
+		padding-left: 5%;
+		padding-right: 5%;
+		text-align: justify;
+		font-family: Arial;
+		font-size: 20px;
+		margin-top: 40%;
+	}
+
+	/* footer containing the copyright text */
+	.footer {
+		position: absolute;
+		float: bottom;
+		width: 100%;
+		background-color: black;
+		color: white;
+		text-align: center;
+		margin-top: 10px;
+		left: 0;
+		z-index: -1;
+	}
+
+	/* the icons from cloudflare except the hamburger icon */
+	.fa:not(.fa-bars) {
+		padding: 7px;
+		font-size: 20px;
+		width: 10%;
+		text-align: center;
+		text-decoration: none;
+		margin: 5px 2px;
+	}
+
+	/* the external links */
+	.link {
+		display: inline;
+		color: black;
+		text-align: center;
+		padding: 0;
+		text-decoration: underline;
+		font-size: smaller;
+		font-weight: normal;
+		border: none;
+	}
+
+	/* 'About' Section image*/
+	.about img {
+		margin-right: 15px;
+		float: left;
+		width: 20%;
+	}
+
+	/* 'Education' Section image*/
+	.education img {
+		margin-right: 15px;
+		float: right;
+		width: 25%;
+	}
+
+	/* 'Experience' Section image*/
+	.experience img {
+		margin-right: 15px;
+		float: left;
+		width: 15%;
+	}
+
+	/* 'Past Projects' Section image*/
+	.projects img {
+		margin-right: 15px;
+		float: right;
+		width: 25%;
+	}
+
+	/* 'Public Research' Section image*/
+	.research img {
+		margin-right: 15px;
+		float: left;
+		width: 15%;
+	}
+
+	/* 'Awards' Section image*/
+	.awards img {
+		margin-right: 15px;
+		float: right;
+		width: 15%;
+	}
+
+	/* 'Invited Talks' Section image*/
+	.talks img {
+		margin-right: 15px;
+		float: left;
+		width: 15%;
+	}
+
+	/* 'About' Section */
+	.about {
+		border-bottom: 4px solid #666F75;
+		padding: 20px;
+		overflow: hidden;
+	}
+
+	/* class of 'Education' Section */
+	.education {
+		border-bottom: 4px solid #666F75;
+		padding: 20px;
+		overflow: hidden;
+	}
+
+	/* class of 'Experience' Section */
+	.experience {
+		border-bottom: 4px solid #666F75;
+		padding: 20px;
+		overflow: hidden;
+	}
+
+	/* class of 'Past Projects' Section */
+	.projects {
+		border-bottom: 4px solid #666F75;
+		padding: 20px;
+		overflow: hidden;
+	}
+
+	/* class of 'Public Research' Section */
+	.research {
+		border-bottom: 4px solid #666F75;
+		padding: 20px;
+		overflow: hidden;
+	}
+
+	/* class of 'Awards' Section */
+	.awards {
+		border-bottom: 4px solid #666F75;
+		padding: 20px;
+		overflow: hidden;
+	}
+
+	/* class of 'Invited Talks' Section */
+	.talks {
+		border-bottom: 4px solid #666F75;
+		padding: 20px;
+		overflow: hidden;
+	}
+}
+
+/* the whole html */
+html {
+	scroll-behavior: smooth;
+	overflow-x: hidden;
+}
+
+/* the title of each section */
+.para h2 {
+	color: #666F75;
+}
+
+/* the anchor links */
+a.anchor {
+	display: block;
+	position: relative;
+	top: -80px;
+	visibility: hidden;
+}
+
+/* pictures at the 'Contact' Section */
+.contacticons {
+	text-align: center;
+}
+
+/* facebook picture at the 'Contact' Section */
+.fa-facebook {
+	background: #3B5998;
+	color: white;
+}
+
+/* twitter picture at the 'Contact' Section */
+.fa-twitter {
+	background: #55ACEE;
+	color: white;
+}
+
+/* instagram picture at the 'Contact' Section */
+.fa-instagram {
+	background: #125688;
+	color: white;
+}
